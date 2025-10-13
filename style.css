@@ -1,0 +1,103 @@
+/* General styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f5f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(to bottom right, #5cc9f5, #b3ecff);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta {
+  display: inline-block;
+  background: white;
+  color: #0078b7;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.cta:hover {
+  background: #e1f7ff;
+}
+
+/* About and Services sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  color: #0078b7;
+  margin-bottom: 20px;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+/* Contact section */
+.contact {
+  background-color: #e6faff;
+}
+
+.contact-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #0078b7;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #005c8a;
+}
+
+.whatsapp {
+  background: #25d366;
+}
+
+.whatsapp:hover {
+  background: #1ebd5a;
+}
+
+/* Footer */
+footer {
+  background: #0078b7;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
