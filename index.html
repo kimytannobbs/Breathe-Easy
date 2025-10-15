@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="description" content="Breathe Easy offers professional air conditioning cleaning in Brisbane and Gold Coast. Keep your air fresh, healthy, and efficient." />
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Breathe Easy | Air Conditioning Cleaning</title>
@@ -8,11 +10,14 @@
 </head>
 <body>
 
-  <header class="hero">
-    <h1>Breathe Easy</h1>
-    <p>Professional Air Conditioning Cleaning Services</p>
-    <a href="#contact" class="cta">Get a Free Quote</a>
-  </header>
+ <header class="hero">
+  <h1 class="gradient-text">Breathe Easy</h1>
+  <p class="tagline">
+    Clean Air, Healthy Home – <span class="highlight">Local</span> Experts You Can Trust.
+  </p>
+  <p>Professional Air Conditioning Cleaning Services</p>
+  <a href="#contact" class="cta">Get a Free Quote</a>
+</header>
 
   <section class="about">
     <h2>Why Choose Breathe Easy?</h2>
@@ -52,19 +57,96 @@
   </blockquote>
 </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Ready to breathe easy again? Get in touch today!</p>
-    <div class="contact-buttons">
-      <a href="mailto:info@breatheeasy.com.au" class="btn">Email Us</a>
-      <a href="https://wa.me/61400000000" target="_blank" class="btn whatsapp">WhatsApp</a>
-        <a href="tel:+61400000000" class="btn phone">Call Us</a>
+<section class="before-after-carousel">
+  <h2>See the Difference</h2>
+  <p>Before and after results from our professional cleaning service.</p>
+
+  <div class="carousel">
+    <div class="carousel-track">
+
+      <!-- Slide 1 -->
+      <div class="slide">
+        <div class="before-after-pair">
+          <img src="https://via.placeholder.com/400x250?text=Before" alt="Before Cleaning">
+          <img src="https://via.placeholder.com/400x250?text=After" alt="After Cleaning">
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <div class="before-after-pair">
+          <img src="https://via.placeholder.com/400x250?text=Before+2" alt="Before Cleaning 2">
+          <img src="https://via.placeholder.com/400x250?text=After+2" alt="After Cleaning 2">
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <div class="before-after-pair">
+          <img src="https://via.placeholder.com/400x250?text=Before+3" alt="Before Cleaning 3">
+          <img src="https://via.placeholder.com/400x250?text=After+3" alt="After Cleaning 3">
+        </div>
+      </div>
+
     </div>
-  </section>
+
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+</section>
+
+  <section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <p>Ready to breathe easy again? Get in touch today!</p>
+  
+  <p>Call or text us: <a href="tel:+61400000000">0400 000 000</a></p>
+  
+  <div class="contact-buttons">
+    <a href="mailto:info@breatheeasy.com.au" class="btn">Email Us</a>
+    <a href="https://wa.me/61400000000" target="_blank" class="btn whatsapp">WhatsApp</a>
+  </div>
+</section>
+
+<section class="map">
+  <h2>Find Us</h2>
+  <iframe
+    src="https://www.google.com/maps?q=4+Conway+Court,+Capalaba+QLD+4157&z=15&output=embed"
+    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+  </iframe>
+</section>
 
   <footer>
     <p>&copy; 2025 Breathe Easy. All rights reserved.</p>
   </footer>
+
+ 
+<script>
+  const track = document.querySelector('.carousel-track');
+  const slides = Array.from(track.children);
+  const nextButton = document.querySelector('.carousel-btn.next');
+  const prevButton = document.querySelector('.carousel-btn.prev');
+  let currentSlide = 0;
+
+  function updateSlide(position) {
+    track.style.transform = `translateX(-${position * 100}%)`;
+  }
+
+  nextButton.addEventListener('click', () => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateSlide(currentSlide);
+  });
+
+  prevButton.addEventListener('click', () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    updateSlide(currentSlide);
+  });
+
+  // Auto-slide every 5 seconds
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateSlide(currentSlide);
+  }, 5000);
+</script>
 
 </body>
 </html>
