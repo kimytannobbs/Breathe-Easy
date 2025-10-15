@@ -45,9 +45,9 @@ body {
 
 /* Highlight "Local" */
 .highlight {
-  font-family: 'Gigi', cursive;  /* handwriting-style font */
+  font-family: 'Rock Salt', cursive;  /* handwriting-style font */
   color: #ff9900;               /* warm orange for contrast */
-  font-size: 1.5rem;            /* slightly bigger than tagline */
+  font-size: 2.0 rem;            /* slightly bigger than tagline */
   font-style: italic;            /* make it cursive */
   letter-spacing: 0.5px;
 }
